@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+    <title>Guess the Color Game</title>
+</head>
+<body>
+    <div class="game__field">
+        <div class="field__rgb">
+            <p class="rgb__text">THE GREAT</p>
+            <h1 class="rgb__title">RGB(0, 0, 0)</h1>
+            <p class="rgb__text">GUESSING GAME</p>
+        </div>
+        <div class="field__control">
+            <p><button class="control__text control__play" onclick="generaterColor()">NEW COLORS</button></p>
+            <p class="control__correct">CORRECT</p>
+            <p>
+                <button class="control__text easy_mode" onclick="easyLevel()">EASY</button>
+                <button class="control__text hard_mode" onclick="hardLevel()">HARD</button>
+            </p>
+        </div>
+        <div class="field__colors">
+            <div class="colors__squares">
+                <div class="color__block easy__block"></div>
+                <div class="color__block easy__block"></div>
+                <div class="color__block easy__block"></div>
+            </div>
+            
+            <div class="colors__squares">
+                <div class="color__block"></div>
+                <div class="color__block"></div>
+                <div class="color__block"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
