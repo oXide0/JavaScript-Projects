@@ -8,7 +8,7 @@ tipPercent.addEventListener('input', () => {
     PercentValue.textContent = tipPercent.value + '%';
     if(price.value != '') {
         tipAmount.textContent = (price.value * tipPercent.value / 100).toFixed(2);
-        let num = (price.value * tipPercent.value / 100) + 100;
+        let num = (price.value * tipPercent.value / 100) + parseFloat(price.value);
         totalBill.textContent = num.toFixed(2);
     }
 });
