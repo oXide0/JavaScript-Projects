@@ -1,0 +1,20 @@
+@mixin text($fs, $fw, $lh, $clr, $mw){
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+    color: $clr;
+    max-width: $mw;
+}
+
+@mixin navtitle {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: $color-4;
+}
+@mixin music-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-1;
+}

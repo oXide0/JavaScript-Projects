@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link type="image/x-icon" href="../img/images.png" rel="shortcut icon"/>
+    <title>Discover Weekly</title>
+</head>
+<body>
+    <main class="main">
+        <div class="main__bg"></div>
+        <article class="menu">
+            <div class="menu__container">
+                <div class="options">
+                    <button class="opttions__btn"><img src="../img/options.svg" alt="options"></button>
+                </div>
+                <div class="navigation">
+                    <nav class="nav__menu">
+                        <ul class="menu__list">
+                            <li class="list__item avtive__item"><button class="item__btn menu__btn" onclick="directoryWay('../index.html')"><img src="../img/icon_home.svg" alt="menu-button" class="ply-img nav-scale active-nav-img"><span class="avtive__item_text nav-scale">Home</span></button></li>
+                            <li class="list__item"><button class="item__btn menu__btn"><img src="../img/icon_search.svg" alt="menu-button" class="ply-img nav-scale"><span class="nav-scale">Search</span></button></li>
+                            <li class="list__item"><button class="item__btn menu__btn"><img src="../img/icon_library.svg" alt="menu-button" class="ply-img nav-scale"><span class="nav-scale">Your Library</span></button></li>
+                        </ul>
+                        <ul class="playlist_items">
+                            <li class="list__item"><button class="item__btn"><img src="../img/icon_create_playlist.svg" alt="menu-button" class="ply-img"><span>Create Playlist</span></button></li>
+                            <li class="list__item"><button class="item__btn"><img src="../img/icon_liked_songs.svg" alt="menu-button" class="ply-img"><span>Liked Songs</span></button></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="menu__border"></div>
+            </div>
+        </article>
+
+        <section class="page">
+            <div class="page__container">
+                <div class="page__intro">
+                    <div class="intro__header">
+                        <div><button class="back__btn" onclick="GoBack()"><img src="../img/back.svg" alt="go-back-img"></button></div>
+                        <div class="ac__logo"><img src="../img/icon_ac.svg" alt="account-icon"></div>
+                    </div>
+                    <div class="page__content">
+                        <div class="page__row">
+                            <div class="playlist__img">
+                                <img src="../img/daily.jpg" alt="" class="autor__img">
+                            </div>
+                            <div class="playlist__info">
+                                <p class="playlist__text">PLAYLIST</p>
+                                <h1 class="playlist__name">Daily Mix</h1>
+                                <p class="playlist__autor">Juice WRLD, Marshmello, SZA and more</p>
+                                <p class="playlist__stats">Made for ... 5 songs, about 15 min</p>
+                            </div>
+                        </div>
+                        <div class="playlist__btn">
+                            <button class="play__btn"><img src="../img/ply-triangle.svg" alt="play-img"></button>
+                            <button class="stop__btn"><img src="../img/stop.svg" alt="stop-img"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="page__songs">
+                    <div class="songs__row">
+                        <div class="song__main">
+                            <p class="songs__number">#</p>
+                            <p class="songs__title">TITLE</p>
+                        </div>
+                        <p class="songs__album">ALBUM</p>
+                    </div>
+                    <div class="songs__border"></div>
+                    <div class="song">
+                        <div class="song__info">
+                            <p class="song__num">
+                                <span class="num">1</span>
+                                <button class="song__play_main">
+                                    <img src="../img/song_play.svg" alt="">
+                                    <img src="../img/song_playing-2.svg" alt="" class="hidden puse-img">
+                                </button>
+                            </p>
+                            <div class="song__img"><img src="../img/ply-daily/kill-bill.jpg" alt="" class="song-img"></div>
+                            <div class="song__text">
+                                <p><a href="" class="song__name">Kill Bill</a></p>
+                                <p><a href="" class="song__autor">SZA</a>
+                            </div>
+                        </div>
+                        <p><a href="" class="song__album">SOS</a></p>
+                        <button class="songs__like song__btn">
+                            <img src="../img/icon_like.svg" alt="">
+                            <img src="../img/active_like.svg" alt="" class="hidden">
+                        </button>
+                        <p class="song__time">4:35</p>
+                        <audio class="weekly_1">
+                            <source src="../music/daily/SZA_Kill_Bill_Official_Video_.mp3">
+                        </audio>
+                    </div>
+                    <div class="song">
+                        <div class="song__info">
+                            <p class="song__num">
+                                <span class="num">2</span>
+                                <button class="song__play_main">
+                                    <img src="../img/song_play.svg" alt="">
+                                    <img src="../img/song_playing-2.svg" alt="" class="hidden puse-img">
+                                </button>
+                            </p>
+                            <div class="song__img"><img src="../img/ply-daily/dirty-soda.jpg" alt="" class="song-img"></div>
+                            <div class="song__text">
+                                <p><a href="" class="song__name">Dirty Soda</a></p>
+                                <p><a href="" class="song__autor">Polo G & Juice WRLD</a>
+                            </div>
+                        </div>
+                        <p><a href="" class="song__album">Dirty Soda</a></p>
+                        <button class="songs__like song__btn">
+                            <img src="../img/icon_like.svg" alt="">
+                            <img src="../img/active_like.svg" alt="" class="hidden">
+                        </button>
+                        <p class="song__time">4:36</p>
+                        <audio class="weekly_1">
+                            <source src="../music/daily/Polo_G_Dirty_Soda_with_Juice_WRLD_Unreleased_99.mp3">
+                        </audio>
+                    </div>
+                    <div class="song">
+                        <div class="song__info">
+                            <p class="song__num">
+                                <span class="num">3</span>
+                                <button class="song__play_main">
+                                    <img src="../img/song_play.svg" alt="">
+                                    <img src="../img/song_playing-2.svg" alt="" class="hidden puse-img">
+                                </button>
+                            </p>
+                            <div class="song__img"><img src="../img/ply-daily/fly.jpg" alt="" class="song-img"></div>
+                            <div class="song__text">
+                                <p><a href="" class="song__name">Fly</a></p>
+                                <p><a href="" class="song__autor">Marshmello</a>
+                            </div>
+                        </div>
+                        <p><a href="" class="song__album">Fly</a></p>
+                        <button class="songs__like song__btn">
+                            <img src="../img/icon_like.svg" alt="">
+                            <img src="../img/active_like.svg" alt="" class="hidden">
+                        </button>
+                        <p class="song__time">3:14</p>
+                        <audio class="weekly_1">
+                            <source src="../music/daily/Marshmello_-_FLY_(Jesusful.com).mp3">
+                        </audio>
+                    </div>
+                    <div class="song">
+                        <div class="song__info">
+                            <p class="song__num">
+                                <span class="num">4</span>
+                                <button class="song__play_main">
+                                    <img src="../img/song_play.svg" alt="">
+                                    <img src="../img/song_playing-2.svg" alt="" class="hidden puse-img">
+                                </button>
+                            </p>
+                            <div class="song__img"><img src="../img/ply-daily/trap-this-way.jpg" alt="" class="song-img"></div>
+                            <div class="song__text">
+                                <p><a href="" class="song__name">Trap This Way</a></p>
+                                <p><a href="" class="song__autor">Lil Uzi Vert</a>
+                            </div>
+                        </div>
+                        <p><a href="" class="song__album">Eternal Atake</a></p>
+                        <button class="songs__like song__btn">
+                            <img src="../img/icon_like.svg" alt="">
+                            <img src="../img/active_like.svg" alt="" class="hidden">
+                        </button>
+                        <p class="song__time">3:05</p>
+                        <audio class="weekly_1">
+                            <source src="../music/daily/Lil_Uzi_Vert_Trap_This_Way_This_Way_Official_.mp3">
+                        </audio>
+                    </div>
+                    <div class="song">
+                        <div class="song__info">
+                            <p class="song__num">
+                                <span class="num">5</span>
+                                <button class="song__play_main">
+                                    <img src="../img/song_play.svg" alt="">
+                                    <img src="../img/song_playing-2.svg" alt="" class="hidden puse-img">
+                                </button>
+                            </p>
+                            <div class="song__img"><img src="../img/ply-daily/go-hard.jpg" alt="" class="song-img"></div>
+                            <div class="song__text">
+                                <p><a href="" class="song__name">Go Hard 2.0</a></p>
+                                <p><a href="" class="song__autor">Juice WRLD</a>
+                            </div>
+                        </div>
+                        <p><a href="" class="song__album">Fighting Demons</a></p>
+                        <button class="songs__like song__btn">
+                            <img src="../img/icon_like.svg" alt="">
+                            <img src="../img/active_like.svg" alt="" class="hidden">
+                        </button>
+                        <p class="song__time">3:41</p>
+                        <audio class="weekly_1">
+                            <source src="../music/daily/Juice_WRLD_Go_Hard_2_0_Official_Music_Video_.mp3">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <footer>
+            <div class="footer__container">
+                <div class="footer__row">
+                    <div class="footer__part-1">
+                        <div class="footr__song">
+                            <p><a href="" class="song__name_main"></a></p>
+                            <p><a href="" class="song__autor_main"></a></p>
+                        </div>
+                        <div class="song__button">
+                            <button class="like__btn song__btn">
+                                <img src="../img/icon_like.svg" alt="">
+                                <img src="../img/active_like.svg" alt="" class="hidden">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="footer__part-2">
+                        <div class="song__player">
+                            <button class="song__btn shuffle__btn">
+                                <img src="../img/icon_shuffle.svg" alt="" title="Enable shuffle">
+                                <img src="../img/active_shuffle.svg" alt="" class="hidden" title="Disable shuffle">
+                            </button>
+                            <button class="song__btn prev__btn" title="Previous"><img src="../img/icon_prev.svg" alt=""></button>
+                            <button class="song__play">
+                                <img src="../img/icon_play.svg" alt="" title="play">
+                                <img src="../img/stop.svg" alt="" class="hidden" title="Pause">
+                            </button>
+                            <button class="song__btn next__btn" title="Next"><img src="../img/icon_next.svg" alt=""></button>
+                            <button class="song__btn repeat__btn">
+                                <img src="../img/icon_repeat.svg" alt="" title="Enable repeat">
+                                <img src="../img/active_repeat.svg" alt="" class="hidden" title="Disable repeat">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="footer__part-3">
+                        <div class="player__controls">
+                            <button class="song__btn control__btn">
+                                <img src="../img/icon_microphone.svg" alt="microphone">
+                                <img src="../img/active_mic.svg" alt="microphone" class="hidden">
+                            </button>
+                            <button class="song__btn control__btn-2">
+                                <img src="../img/icon_playlist.svg" alt="playlist">
+                                <img src="../img/active_playlists.svg" alt="playlist" class="hidden">
+                            </button>
+                            <button class="song__btn">
+                                <img src="../img/icon_comp.svg" alt="computer">
+                            </button>
+                            <button class="song__btn">
+                                <img src="../img/icon_sound.svg" alt="sound">
+                            </button>
+                            <input type="range" class="change_sound">
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__row-2">
+                    <p class="first__time">0:00</p>
+                    <input class="progress__bar" type="range" value="0"></input>
+                    <p class="second__time">0:00</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+
+    <script src="../js/app.js"></script>
+</body> 
+</html>
