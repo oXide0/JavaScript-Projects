@@ -342,5 +342,4 @@ const game = {
 
 const check = new gameClass();
 
-
 scanKey();
