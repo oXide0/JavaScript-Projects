@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link type="image/x-icon" href="img/sun.png" rel="shortcut icon">
+    <title>Weather App</title>
+</head>
+<body>
+    <main class="main">
+        <div class="main_bg">
+            <div class="main__container">
+                <div class="header">
+                    <div class="time_content">
+                        <p class="time">03:56</p>
+                        <p class="time__part">PM</p>
+                    </div>
+                    <div class="place">
+                        <p class="place__text">Kosice</p>
+                        <button class="search__btn">
+                            <img src="img/search-icon.svg" alt="search" class="search__img">
+                            <img src="img/search_hover.svg" alt="" class="search__img__hover">
+                        </button>
+                    </div>
+                    <div class="place__form right_hidden">
+                        <input type="text" id="place__input" placeholder="Enter a city" autocomplete="off">
+                        <button class="submit__btn">
+                            <img src="img/search-icon.svg" alt="search" class="search__img">
+                            <img src="img/search_hover.svg" alt="" class="search__img__hover">
+                        </button>
+                    </div>
+                </div>
+                <div class="main__content">
+                    <p class="date">Thursday, 16 Mar</p>
+                    <div class="weather__info">
+                        <div class="info__name">
+                            <p>Humidity</p>
+                            <p>Pressure</p>
+                            <p>Wind Speed</p>
+                            <p>Sunrise</p>
+                            <p>Sunset</p>
+                        </div>
+                        <div class="info__value">
+                            <p class="humidity"></p>
+                            <p class="pressure"></p>
+                            <p class="wind"></p>
+                            <p class="sunrise"></p>
+                            <p class="sunset"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="footer__container">
+                        <div class="active__block">
+                            
+                            <div class="weather__img">
+                                <img src="img/cloudy.png" alt="cloudy" class="weather__icon main__icon">
+                            </div>
+                            <div class="weather__info">
+                                <p class="day"></p>
+                                <p class="day_degree">Night - 0.78°C</p>
+                                <p class="night_degree">Day - 5.16°C</p>
+                            </div>
+                        </div>
+    
+                        <div class="day__block">
+                            <p class="day"></p>
+                            <div class="weather__img">
+                                <img src="img/sun.png" alt="sun" class="weather__icon">
+                            </div>
+                            <div class="weather__info">
+                                <p class="day_degree">Night - 0.78°C</p>
+                                <p class="night_degree">Day - 5.16°C</p>
+                            </div>
+                        </div>
+    
+                        <div class="day__block">
+                            <p class="day"></p>
+                            <div class="weather__img">
+                                <img src="img/partly-cloudy.png" alt="cloudy" class="weather__icon">
+                            </div>
+                            <div class="weather__info">
+                                <p class="day_degree">Night - 0.78°C</p>
+                                <p class="night_degree">Day - 5.16°C</p>
+                            </div>
+                        </div>
+    
+                        <div class="day__block">
+                            <p class="day"></p>
+                            <div class="weather__img">
+                                <img src="img/raining.png" alt="raining" class="weather__icon">
+                            </div>
+                            <div class="weather__info">
+                                <p class="day_degree">Night - 0.78°C</p>
+                                <p class="night_degree">Day - 5.16°C</p>
+                            </div>
+                        </div>
+    
+                        <div class="day__block">
+                            <p class="day"></p>
+                            <div class="weather__img">
+                                <img src="img/snowing.png" alt="snowing" class="weather__icon">
+                            </div>
+                            <div class="weather__info">
+                                <p class="day_degree">Night - 0.78°C</p>
+                                <p class="night_degree">Day - 5.16°C</p>
+                            </div>
+                        </div>
+
+                        <div class="day__block">
+                            <p class="day"></p>
+                            <div class="weather__img">
+                                <img src="img/cloudy_night.png" alt="cloudy" class="weather__icon">
+                            </div>
+                            <div class="weather__info">
+                                <p class="day_degree">Night - 0.78°C</p>
+                                <p class="night_degree">Day - 5.16°C</p>
+                            </div>
+                        </div>
+
+                        <div class="day__block">
+                            <p class="day"></p>
+                            <div class="weather__img">
+                                <img src="img/night.png" alt="night" class="weather__icon">
+                            </div>
+                            <div class="weather__info">
+                                <p class="day_degree">Night - 0.78°C</p>
+                                <p class="night_degree">Day - 5.16°C</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/app.js" type="module"></script>
+</body>
+</html>
