@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="block">
+                <div class="block__img"></div>
+                <div class="block__content">
+                    <div action="" id="form__content"><!-- we can change div teg to form for php -->
+                        <div class="form__part">
+                            <p class="input__text">First Name<span class="star"> *</span></p>
+                            <input type="text" class="form__input" autocomplete="off" required>
+                            <p class="input__text">Last Name<span class="star"> *</span></p>
+                            <input type="text" class="form__input" autocomplete="off" required>
+                            <p class="input__text">Email<span class="star"> *</span></p>
+                            <input autocomplete="off" type="email" class="form__input" required>
+                            <p class="input__text">Phone Number<span class="star"> *</span></p>
+                            <input type="text" class="form__input" autocomplete="off" required>
+
+                            <button form="form__content" type="reset" class="send_link reset__btn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Reset
+                            </button>
+                        </div>
+                        <div class="form__part-2">
+                            <select name="" id="form__select" required>
+                                <option value="" disabled selected>Profession</option>
+                                <option value="" class="profession__item">Frontend</option>
+                                <option value="" class="profession__item">Backend</option>
+                                <option value="" class="profession__item">Fullstack</option>
+                                <option value="" class="profession__item">Mobile</option>
+                                <option value="" class="profession__item">Game</option>
+                            </select>
+                            <select name="" id="form__select" required>
+                                <option value="" disabled selected>Expierence Level</option>
+                                <option value="" class="profession__item">Junior</option>
+                                <option value="" class="profession__item">Middle</option>
+                                <option value="" class="profession__item">Senior</option>
+                            </select>
+                            <select name="" id="form__select" required>
+                                <option value="" disabled selected>Job Type</option>
+                                <option value="" class="profession__item">Full-time</option>
+                                <option value="" class="profession__item">Part-time</option>
+                                <option value="" class="profession__item">Contact</option>
+                                <option value="" class="profession__item">Temporary</option>
+                                <option value="" class="profession__item">Intership</option>
+                            </select>
+                            <div class="form__languages">
+                                <p class="lang__title">Languages:</p>
+                                <div class="langs__check">
+                                    <div><input type="checkbox" id="lang_1" class="checkLang"><label for="lang_1" class="langValue">English</label></div>
+                                    <div><input type="checkbox" id="lang_2" class="checkLang"><label for="lang_2" class="langValue">Deutsch</label></div>
+                                    <div><input type="checkbox" id="lang_3" class="checkLang"><label for="lang_3" class="langValue">French</label></div>
+                                    <div><input type="checkbox" id="lang_4" class="checkLang"><label for="lang_4" class="langValue">Spanish</label></div>
+                                    <div><input type="checkbox" id="lang_5" class="checkLang"><label for="lang_5" class="langValue">Ukranian</label></div>
+                                </div>
+                            </div>
+                            <button form="form__content" type="submit" class="send_link">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Submit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
