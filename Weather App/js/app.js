@@ -74,16 +74,17 @@ const showWeatherData = function(data) {
     for(let i = 0; i < document.querySelectorAll('.day_degree').length; i++) {
         document.querySelectorAll('.day_degree')[i].textContent = 'Day - ' + temp_max + '°C';
         document.querySelectorAll('.night_degree')[i].textContent = 'Night - ' + temp_min + '°C';
+        let hours = parseInt(document.querySelector('.time').textContent);
         switch(description) {
             case 'clear sky':
-                if(document.querySelector('.time__part').textContent == 'PM') {
+                if(document.querySelector('.time__part').textContent == 'PM' && hours > 10) {
                     document.querySelectorAll('.weather__icon')[0].setAttribute('src', 'img/night.png');
                 }else {
                     document.querySelectorAll('.weather__icon')[0].setAttribute('src', 'img/sun.png');
                 }
                 break;
             case 'few clouds':
-                if(document.querySelector('.time__part').textContent == 'PM') {
+                if(document.querySelector('.time__part').textContent == 'PM' && hours > 10) {
                     document.querySelectorAll('.weather__icon')[0].setAttribute('src', 'img/cloudy_night.png');
                 }else {
                     document.querySelectorAll('.weather__icon')[0].setAttribute('src', 'img/partly-cloudy.png');
